@@ -59,9 +59,9 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
             icon : Icon(Icons.precision_manufacturing_rounded),)
           ),
           AnimatedDefaultTextStyle(
-            child: Text('data'), 
             style:(_isVisible ? context.textTheme().titleSmall : context.textTheme().titleLarge) ?? TextStyle(), 
-            duration: _DurationItems.durationLow,),
+            duration: _DurationItems.durationLow,
+            child: Text('data'),),
                
           AnimatedIcon(
               icon: AnimatedIcons.menu_close, 
@@ -77,10 +77,10 @@ class _AnimatedLearnViewState extends State<AnimatedLearnView> with TickerProvid
 
             Expanded(child: Stack(
               children: [AnimatedPositioned(
-                child: Text('data'), 
                 duration: _DurationItems.durationLow,
                 top: 10,
                 curve: Curves.elasticInOut,
+                child: Text('data'),
                 )
               ]
             )),

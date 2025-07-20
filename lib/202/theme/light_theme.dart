@@ -20,7 +20,7 @@ class LightTheme{
     ),
     colorScheme: ColorScheme.light(),
     checkboxTheme: CheckboxThemeData(
-      fillColor: MaterialStateProperty.all(Colors.green), side: BorderSide(color: Colors.green)),
+      fillColor: WidgetStateProperty.all(Colors.green), side: BorderSide(color: Colors.green)),
     
     textTheme: 
     ThemeData.light().textTheme.copyWith(titleLarge: TextStyle(fontSize: 24,color: _lightColor._textColor)));

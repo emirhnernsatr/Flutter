@@ -8,7 +8,7 @@ class FormLearnView extends StatefulWidget {
 }
 
 class _FormLearnViewState extends State<FormLearnView> {
-  GlobalKey<FormState> _key = GlobalKey();
+  final GlobalKey<FormState> _key = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -53,5 +53,5 @@ class FormFieldValidator {
 }
 
 class VaslidatorMessage {
-  static String _notEmpty = "Bu alan boş bırakılamaz";
+  static final String _notEmpty = "Bu alan boş bırakılamaz";
 }
